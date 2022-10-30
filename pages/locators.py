@@ -22,3 +22,4 @@ class ProductPageLocators:
     PRODUCT_NAME_IN_BASKET_ALERT = (By.CSS_SELECTOR, "#messages>.alert:first-child .alertinner strong")
     BASKET_PRICE_ALERT = (By.CSS_SELECTOR, "#messages>.alert:nth-child(3) .alertinner strong")
     BUTTON_ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages>.alert-success:first-child")
