@@ -14,8 +14,12 @@ class BasePage:
         # self.browser.implicitly_wait(timeout)
 
     def go_to_login_page(self):
-        link = self.browser.find_element(*BasePageLocators.LOGIN_LINK_INVALID)
+        link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         link.click()
+
+    def go_to_basket(self):
+        basket_button = self.browser.find_element(*BasePageLocators.BASKET_BUTTON)
+        basket_button.click()
 
     def is_disappeared(self, how, what, timeout=4):
         try:
