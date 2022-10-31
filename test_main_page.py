@@ -1,6 +1,17 @@
+import pytest
+
 from .pages.main_page import MainPage
 from .pages.login_page import LoginPage
 from .pages.basket_page import BasketPage
+
+
+@pytest.mark.login_guest
+class TestMainPage:
+    def test_guest_can_go_to_login_page(self, browser):
+        pass
+
+    def test_guest_should_see_login_link(self, browser):
+        pass
 
 
 def test_guest_can_go_to_login_page(browser):
