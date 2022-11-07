@@ -6,7 +6,7 @@ from .pages.basket_page import BasketPage
 from .pages.links import Links
 
 
-@pytest.mark.login_guest
+@pytest.mark.login
 class TestMainPage:
     def test_guest_can_go_to_login_page(self, browser):
         link = Links.MAIN_PAGE_LINK
