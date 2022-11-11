@@ -69,7 +69,7 @@ class TestUserAddToBasketFromProductPage:
 def test_guest_can_add_product_to_basket_parametrize(browser, link):
     product_page = ProductPage(browser, link)
     product_page.open()
-    product_page.add_product_to_basket()
+    product_page.add_product_to_basket_solve_quiz()
 
 
 @pytest.mark.need_review
